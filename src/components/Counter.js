@@ -2,14 +2,14 @@ import React from 'react';
 import Button from './Button';
 
 
-const Counter = props => (
+const Counter = ({ count, increment, decrement}) => (
     <main className="counter">
-        {props.count}
+        {count}
         <Button 
-            function={props.increment}
+            function={increment}
             functionName="Increment" />
         <Button
-            function={props.decrement}
+            function={decrement}
             functionName="Decrement" />
     </main>
 )
